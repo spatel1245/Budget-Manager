@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- -
+BELOW is for GridPane Layout
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+</GridPane>
+
+
+       delete tjhis arrow and everything above to use GRIDPANE  -->
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="679.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.S1Cont">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="240.0" layoutY="280.0" lineSpacing="1.0" prefHeight="159.0" prefWidth="184.0" text="Enter your expenses &#10;for each category&#10;then press update&#10;&#10;Enter 0 if not applicable" textAlignment="CENTER" />
+      <Button fx:id="Quit" alignment="CENTER" layoutX="591.0" layoutY="614.0" mnemonicParsing="false" onAction="#quit" prefHeight="40.0" prefWidth="91.0" text="Quit" textAlignment="CENTER">
+         <font>
+            <Font name="Heiti TC Light" size="18.0" />
+         </font></Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="188.0" layoutY="23.0" prefHeight="91.0" prefWidth="543.0" text="Student Budget Manager" textAlignment="CENTER">
+         <font>
+            <Font name="Hei Regular" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Tuition" layoutX="661.0" layoutY="298.0" prefHeight="40.0" prefWidth="150.0" promptText="Tuition" />
+      <TextField fx:id="Food" layoutX="661.0" layoutY="348.0" prefHeight="40.0" prefWidth="150.0" promptText="Food" />
+      <TextField fx:id="Utilities" layoutX="661.0" layoutY="398.0" prefHeight="40.0" prefWidth="150.0" promptText="Utilities" />
+      <TextField fx:id="Rent" layoutX="661.0" layoutY="448.0" prefHeight="40.0" prefWidth="150.0" promptText="Rent" />
+      <Button fx:id="Update" alignment="CENTER" layoutX="397.0" layoutY="614.0" mnemonicParsing="false" onAction="#update" prefHeight="40.0" prefWidth="91.0" text="Update" textAlignment="CENTER">
+         <font>
+            <Font name="Heiti TC Light" size="18.0" />
+         </font>
+      </Button>
+      <PieChart fx:id="chart" layoutX="88.0" layoutY="134.0" />
+      <Label layoutX="682.0" layoutY="269.0" text="Your Expenses">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="204.0" layoutY="614.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="91.0" text="Back">
+         <font>
+            <Font name="Heiti TC Light" size="18.0" />
+         </font></Button>
+      <Label layoutX="662.0" layoutY="168.0" text="Amount Remaining">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="incomeRem" alignment="CENTER" editable="false" layoutX="668.0" layoutY="194.0" onAction="#setRemaining" prefHeight="40.0" prefWidth="137.0" />
+      <TextField fx:id="Other" layoutX="661.0" layoutY="498.0" prefHeight="40.0" prefWidth="150.0" promptText="Other" />
+      <Label layoutX="595.0" layoutY="410.0" text="Utilities">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="599.0" layoutY="360.0" text="Food">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="600.0" layoutY="460.0" text="Rent">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="510.0" text="Other">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="596.0" layoutY="310.0" text="Tuition">
+         <font>
+            <Font name="Heiti TC Light" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
